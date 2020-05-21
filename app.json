@@ -1,0 +1,14 @@
+{
+    "name": "Let's Encrypt challenge resolver tool",
+    "description": "Serves an acme-challenge provided by let's encrypt certbot",
+    "env": {
+        "CHALLENGE_PATH": {
+            "description": "The path of the challenge, without the /.well-known/acme-challenge/ part",
+            "required": true
+        },
+        "CHALLENGE_CONTENT": {
+            "description": "The content of the challenge provided by certbot",
+            "required": true
+        }
+    }
+}
